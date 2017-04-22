@@ -2,13 +2,15 @@ import com.typesafe.sbt.SbtScalariform._
 
 import scalariform.formatter.preferences._
 
-name := "play-silhouette-reactivemongo-seed"
+name := "CvSearch"
 
-version := "4.0.0"
+version := "0.0.1"
 
 scalaVersion := "2.11.8"
 
 resolvers += Resolver.jcenterRepo
+resolvers += Resolver.url("Typesafe Ivy releases", url("https://repo.typesafe.com/typesafe/ivy-releases"))(Resolver.ivyStylePatterns)
+
 
 libraryDependencies ++= Seq(
   "org.reactivemongo" %% "play2-reactivemongo" % "0.12.1",
